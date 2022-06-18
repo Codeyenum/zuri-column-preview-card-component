@@ -59,7 +59,9 @@ body {
 
 .link_box {
    background-color: hsl(179, 100%, 13%);
-   height: 2rem;
+   min-height: 2rem;
+   max-height: 3rem;
+   text-align: center;
 
    display: flex;   
    justify-content: center;   
@@ -78,4 +80,11 @@ body {
 
 .link_box a:hover {
    color: hsl(31, 77%, 52%);
+}
+
+@media screen and (max-width: 425px) {
+   .container {      
+      gap: 10px 10px;
+      padding: 1.25rem;
+   }
 }
