@@ -1,0 +1,81 @@
+* {
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body {
+   background-image: linear-gradient(to bottom, #800080bb, #ffa60096);
+}
+
+.container {
+   height: 100vh;
+   padding: 2rem;
+
+   display: grid;
+   gap: 32px 32px;
+   
+   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+   grid-template-rows: 1fr 1fr 1fr 1fr;
+
+   grid-template-areas: 
+   "red red red red yellow yellow yellow"
+   "red red red red yellow yellow yellow"
+   "green green green blue blue blue blue"
+   "green green green blue2 blue2 blue2 blue2"
+   ;
+}
+
+.box {
+   border: 2px solid black;
+   /* border-radius: 10px; */
+}
+
+.one {
+   background-color: red;
+   grid-area: red;
+}
+
+.two {
+   background-color: yellow;
+   grid-area: yellow;
+}
+
+.three {
+   background-color: green;
+   grid-area: green;
+}
+
+.four {
+   background-color: blue;
+   grid-area: blue;
+}
+
+.five {
+   background-color: blue;
+   grid-area: blue2;
+}
+
+
+.link_box {
+   background-color: hsl(179, 100%, 13%);
+   height: 2rem;
+
+   display: flex;   
+   justify-content: center;   
+   align-items: center;
+}
+
+.link_box p {
+   font-size: 1.2rem;
+}
+
+.link_box a {   
+   color:  hsl(0, 0%, 95%);
+   margin: 3rem;   
+   text-decoration: none;
+}
+
+.link_box a:hover {
+   color: hsl(31, 77%, 52%);
+}
